@@ -85,14 +85,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Portfolio of Ibad Kabir, B.Tech CSE student in AI/ML." },
       { name: "author", content: "Ibad Kabir" },
       { property: "og:title", content: "Ibad Kabir — Portfolio" },
-      { property: "og:description", content: "Portfolio of Ibad Kabir, B.Tech CSE student in AI/ML." },
+      {
+        property: "og:description",
+        content: "Portfolio of Ibad Kabir, B.Tech CSE student in AI/ML.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@400;500;700&family=Rock+Salt&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@400;500;700&family=Rock+Salt&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
