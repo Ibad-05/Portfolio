@@ -1,3 +1,4 @@
+
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 
@@ -28,8 +29,24 @@ const burst = Array.from({ length: 28 }, (_, i) => {
   return `${(Math.cos(a) * r).toFixed(1)},${(Math.sin(a) * r).toFixed(1)}`;
 }).join(" ");
 
-// Add artwork here: { src, title, note? }. Images keep their natural aspect ratio.
-const ARTWORK: { src: string; title: string; note?: string }[] = [];
+// Creative Works Gallery
+const ARTWORK: { src: string; title: string; note?: string }[] = [
+  {
+    src: "/artwork/BULLY artwork.png",
+    title: "BULLY",
+    note: "Artwork",
+  },
+  {
+    src: "/artwork/DON poster.png",
+    title: "DON",
+    note: "Poster Design",
+  },
+  {
+    src: "/artwork/THE BATMAN artwork.jpg",
+    title: "THE BATMAN",
+    note: "Digital Artwork",
+  },
+];
 
 const KEY = "portfolio-photo";
 const EMAIL = "ibaadkabir@gmail.com";
